@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="form">
+    <form action="/" method="POST">
+        <label for="user">User</label>
+        <input type="text" name="user">
+        <label for="password">Password</label>
+        <input type="text" name="password">
+        <input type="submit" value="Create">
+    </form>
+</div>
+{% endblock %}
