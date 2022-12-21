@@ -1,13 +1,12 @@
-{% extends 'base.html' %}
-
-{% block body %}
-<div class="form">
-    <form action="/" method="POST">
-        <label for="user">User</label>
-        <input type="text" name="user">
-        <label for="password">Password</label>
-        <input type="text" name="password">
-        <input type="submit" value="Create">
+{{ msg|safe }}
+<table align="center">
+    <form method="POST" action="create">
+        <tr><td align="right">ユーザーID</td><td><input type="text" name="ID" required></td></tr>
+        <tr><td align="right">ユーザー名</td><td><input type="text" name="name" required></td></tr>
+        <tr><td align="right">パスワード</td><td><input type="password" name="password" required></td></tr>
+        <tr><td align="right">性別</td><td><input type="sex" name="sex" required></td></tr>
+        <tr><td align="right">年齢</td><td><input type="age" name="age" required></td></tr>
+        <tr><td align="right">職業</td><td><input type="job" name="job" required></td></tr>
+        <tr><td colspan="2" align="right"><input type="submit" value="作成"></td></tr>
     </form>
-</div>
-{% endblock %}
+</table>

@@ -1,0 +1,16 @@
+<table align="center">
+    <tr><td align="right">ID</td><td>{{ ID|safe}}</td></tr>
+    <tr><td align="right">名前</td><td>{{ name|safe}}</td></tr>
+    <tr><td align="right">性別</td><td>{{ sex|safe}}</td></tr>
+    <tr><td align="right">年齢</td><td>{{ age|safe}}</td></tr>
+    <tr><td align="right">職業</td><td>{{ job|safe}}</td></tr>
+    <form method="get" action="/usage">
+        <button type="submit">支出の入力へ</button>
+    </form>
+    <form method="get" action="/rireki">
+        <button type="submit">自分の支出の履歴の確認へ</button>
+    </form>
+    <form method="get" action="/getapi">
+        <button type="submit">職業別支出入ランキングの確認へ</button>
+    </form>
+</table>

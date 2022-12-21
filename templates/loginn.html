@@ -1,0 +1,14 @@
+<body>
+    <br>
+    <h1>支出入管理サービス</h1>
+    
+    <a href="create">新規登録</a><br>
+    {{msg|safe}}
+    <table align="center">
+        <form method="POST" action="loginn">
+            <tr><td align="right">ユーザ名</td><td><input type="text" name="name" required></td></tr>
+            <tr><td align="right">パスワード</td><td><input type="password" name="password" required></td></tr>
+            <tr><td align="right" colspan="2"><input type="submit" value="認証"></td></tr>
+        </form>
+    </table>
+</body>

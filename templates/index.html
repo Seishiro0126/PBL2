@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<a href="/create" role="button">新規登録</a>
+<form method="get" action="/loginn">
+    <button type="submit">ログイン画面へ</button>
+</form>
+<form method="get" action="/create">
+    <button type="submit">新規登録へ</button>
+</form>
 {% endblock %}
