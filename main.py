@@ -177,7 +177,7 @@ def rireki():
         WHERE ID=%(ID)s
         ORDER BY updatetime DESC""",{"ID":ID})
         res = "<table align=\"center\" border=\"1\">\n"
-        res = res + "\t<tr><th>&nbsp;日時&nbsp;</th><th>&nbsp;入出金金額&nbsp;</th><th>&nbsp;合計&nbsp;</th><th>&nbsp;詳細&nbsp;</th></tr>\n"
+        res = res + "\t<tr><th>&nbsp;日時&nbsp;</th><th>&nbsp;支出入金額&nbsp;</th><th>&nbsp;合計&nbsp;</th><th>&nbsp;使用用途&nbsp;</th></tr>\n"
         for row in cur:
             income = row[0]
             sum = row[1]
